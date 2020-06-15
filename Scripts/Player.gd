@@ -47,4 +47,5 @@ func move_player():
 
 func player_death():
 	queue_free()
+	get_tree().call_group("HUD", "show_restart_label")
 

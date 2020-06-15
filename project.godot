@@ -17,7 +17,6 @@ _global_script_class_icons={
 
 config/name="Geometry Dash Clone"
 run/main_scene="res://Scenes/Level1.tscn"
-config/icon="res://icon.png"
 
 [display]
 
@@ -29,7 +28,6 @@ window/size/height=720
 jump={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
-, Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
 restart={
@@ -49,6 +47,6 @@ restart={
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
-environment/default_clear_color=Color( 0.0666667, 0.0784314, 0.109804, 1 )
+environment/default_clear_color=Color( 0.0313726, 0.0392157, 0.0588235, 1 )
 quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"

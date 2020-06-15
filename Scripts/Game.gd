@@ -13,8 +13,8 @@ func _process(delta):
 
 
 func _get_input():
-	if Input.is_action_pressed("restart"):
+	if Input.is_action_just_pressed("restart"):
 		get_tree().reload_current_scene()
-	if Input.is_action_pressed("ui_cancel"):
+	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 
