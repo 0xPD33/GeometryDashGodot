@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Geometry Dash Clone"
 run/main_scene="res://Scenes/Level1.tscn"
 
+[autoload]
+
+Global="*res://Scripts/Global.gd"
+
 [display]
 
 window/size/width=1280
@@ -47,6 +51,6 @@ restart={
 quality/intended_usage/framebuffer_allocation=0
 quality/intended_usage/framebuffer_allocation.mobile=0
 quality/2d/use_pixel_snap=true
-environment/default_clear_color=Color( 0.0313726, 0.0392157, 0.0588235, 1 )
+environment/default_clear_color=Color( 0.0431373, 0.0627451, 0.109804, 1 )
 quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"
