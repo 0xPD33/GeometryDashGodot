@@ -10,7 +10,9 @@ func _ready():
 	
 	$HBoxContainer/DeathCounter.text = "Deaths: " + str(Global.deaths)
 	
-	# only show the controls once
+	yield(get_tree().create_timer(0.5), "timeout")
+	
+	# only show the controls once after the timer runs out
 	if not Global.controls_shown:
 		$AnimationPlayer.play("fade")
 	
