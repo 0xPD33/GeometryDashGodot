@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/burn_sfx.wav-8d304e366e0111e21781e14a1a4adaaa.sample"
+
+[deps]
+
+source_file="res://Assets/SFX/burn_sfx.wav"
+dest_files=[ "res://.import/burn_sfx.wav-8d304e366e0111e21781e14a1a4adaaa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

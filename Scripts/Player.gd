@@ -24,6 +24,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = jump_height
+			$JumpSFX.play()
 			
 			# checks if the animation is playing or not. if it is: stop and play it again.
 			# fixes a bug that prevents the jump anim to play when performing multiple jumps in quick succession.
@@ -59,6 +60,7 @@ func player_death():
 	if not dead:
 		dead = true
 		lock_movement()
+		$DeathSFX.play()
 		$DeathAnimation.play("death_anim")
 		yield($DeathAnimation, "animation_finished")
 		queue_free()

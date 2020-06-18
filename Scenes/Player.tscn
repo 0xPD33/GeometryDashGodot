@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Textures/player.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
+[ext_resource path="res://Assets/SFX/SFX_Jump_40.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/SFX/burn_sfx.wav" type="AudioStream" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32.0078, 31.9957 )
@@ -82,3 +84,12 @@ anims/jump_anim = SubResource( 2 )
 
 [node name="DeathAnimation" type="AnimationPlayer" parent="."]
 anims/death_anim = SubResource( 3 )
+
+[node name="JumpSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -9.0
+pitch_scale = 1.1
+
+[node name="DeathSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -3.0
